@@ -1,0 +1,23 @@
+#category-container{
+    display: grid;;
+    grid-template-columns: repeat(4,1fr);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    gap: 20px 20px;
+    font-family: 'Trade Gothic LT Pro', sans-serif !important;
+}
+#category-container>div:hover{
+    cursor: pointer;
+}
+
+#category-container img{
+    width: 100%;
+    border-radius: 48%;
+    border: solid red;
+    height: 170px;
+}
+h2{
+    text-align: center;
+    font-family: 'Trade Gothic LT Pro', sans-serif !important;
+}

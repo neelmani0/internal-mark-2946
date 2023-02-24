@@ -1,4 +1,4 @@
-#head{
+#head {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,26 +6,29 @@
     margin-bottom: 0px;
     border-bottom: 1px solid rgb(228, 220, 220);
 }
-#guest h2{
-padding-top: 50px;
-margin-left: 10px;
+
+#guest h2 {
+    padding-top: 50px;
+    margin-left: 10px;
 }
-#guest{
-    
- width: 25%;
- border-right: 1px solid rgb(228, 220, 220);
+
+#guest {
+    width: 25%;
+    border-right: 1px solid rgb(228, 220, 220);
 }
-#guest a{
- text-decoration:none ;
- color: rgb(41, 39, 39);
- 
+
+#guest a {
+    text-decoration: none;
+    color: rgb(41, 39, 39);
 }
-#guest img{
+
+#guest img {
     width: 20px;
     height: 20px;
     margin-right: 50px;
 }
-.guest{
+
+.guest {
     display: flex;
     align-items: center;
     justify-content: centers;
@@ -35,7 +38,8 @@ margin-left: 10px;
     height: 60px;
     border-bottom: 1px solid rgb(228, 220, 220);
 }
-.guest p{
+
+.guest p {
     font-family: Arial narrow;
     font-size: 15px;
     margin-left: 16px;

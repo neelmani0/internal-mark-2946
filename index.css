@@ -14,6 +14,9 @@ header{
     display: flex;
     justify-content: space-between;
     position: relative;
+    font-family: sans-serif;
+    border-bottom: 1px solid gray;
+    padding: 10px;
 }
 
 nav > ul{
@@ -27,10 +30,12 @@ nav > ul > li{
 
 nav > ul > li > a{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .mega-menu{
+    display: flex;
     position: absolute;
     top: 100%;
     left: 0px;
@@ -40,12 +45,151 @@ nav > ul > li > a{
     width: 100%;
     height: 400px;
     box-shadow: 0px 10px 2px lightskyblue;
+    background-color: white;
+    margin-top: 10px;
+    padding-bottom: 10px;
 }
 
 nav > ul > li:hover .mega-menu{
    opacity: 1;
    visibility: visible;
 }
+
+/* .mega-menu{
+    width: 30%;
+} */
+
+.mega-menu-items{
+    width: 30%;
+}
+
+.mega-menu-items ul li{
+    list-style: none;
+    padding: 5px;
+    font-size: 11px;
+} 
+
+.mega-menu-items h3{
+    font-size: 14px;
+    margin-left: 55px;
+}
+
+/* .mega-menu-items-image{
+    width: 65%;
+} */
+.mega-menu-items-image img{
+    width: 90%;
+}
+
+
+
+.mega-menu-cases{
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    width: 100%;
+    /* height: 400px; */
+    box-shadow: 0px 10px 2px gray;
+    background-color: white;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav > ul > li:hover .mega-menu-cases{
+   opacity: 1;
+   visibility: visible;
+}
+
+/* .mega-menu{
+    width: 30%;
+} */
+
+.mega-menu-cases-items{
+    width: 30%;
+    /* background-color: red; */
+    /* margin: 10px; */
+}
+
+.mega-menu-cases-items ul li{
+    list-style: none;
+    padding: 5px;
+    font-size: 5px;
+    margin-left: -40px;
+} 
+.mega-menu-cases-items ul li a{
+    list-style: none;
+    padding: 7px;
+    font-size: 11px;
+    text-decoration: none;
+} 
+
+.mega-menu-cases-items ul li a:hover{
+    text-decoration: underline;
+}
+
+.mega-menu-cases-items h3{
+    font-size: 14px;
+    margin-left: 22px;
+}
+
+.mega-menu-cases-images{
+    width: 130%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mega-menu-cases-images > div h3{
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.mega-menu-cases-images > div h3 a{
+    text-decoration: none;
+}
+/* 
+.mega-menu-cases-images > div a{
+    text-decoration: underline;
+} */
+
+
+.mega-menu-cases-images > #conext-type{
+    width: 45%;
+}
+
+/* .mega-menu-cases-images > #imag-1{
+    width: 60%;
+} */
+.mega-menu-cases-images >#imag-1 img{
+    width: 90%;
+    height: 500px;
+    margin-left: 20px;
+}
+.mega-menu-cases-images >#imag-2 img{
+    width: 90%;
+    margin-left: 20px;
+}
+.mega-menu-cases-images >#imag-3 img{
+    width: 90%;
+    height: 400px;
+    margin-left: 20px;
+}
+.mega-menu-cases-images >#imag-4 img{
+    width: 100%;
+    /* margin-left: 20px; */
+}
+.mega-menu-cases-images >#imag-5 img{
+    width: 90%;
+    margin-left: 20px;
+}
+.mega-menu-cases-images >#imag-6 img{
+    width: 90%;
+    margin-left: 20px;
+}
+
 
 
 
@@ -83,7 +227,8 @@ nav > ul > li:hover .mega-menu{
 /* ------------logo---------- */
 #logo {
     /* border: 1px solid blue; */
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-left: 30px;
 }
 
 #logo img {
@@ -127,7 +272,6 @@ nav > ul > li:hover .mega-menu{
 }
 
 #symbol>div {
-    /* display: flex; */
     margin-top: 18px;
 }
 

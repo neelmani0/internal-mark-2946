@@ -225,7 +225,7 @@
     }
   ],
 
-  "chargingSolutions" : [
+  "CHARGING-SOLUTIONS" : [
     {
         "id": 1,
         "title": "Conoid Universal Magnetic Wireless Charging Stand (15W)",
@@ -236,7 +236,7 @@
         "stock": 94,
         "type": "wireless",
         "category": "charging",
-        "thumbnail": "https://images.dailyobjects.com/marche/product-images/1809/conoid-universal-magnetic-charging-stand-images/Conoid-Universal-Magnetic-Charging-Stand-vw.png?tr=cm-pad_resize,v-2,w-769,h-578,dpr-1",
+        "thumbnail": "https://images.dailyobjects.com/marche/product-images/1809/surge-2-in-1-magnetic-charging-station-images/Surge-2-In-1-Magnetic-Charging-Station.png?tr=cm-pad_resize,v-2,w-384,h-569,dpr-1",
         "images": [
             "https://images.dailyobjects.com/marche/product-images/1809/conoid-universal-magnetic-charging-stand-images/Conoid-Universal-Magnetic-Charging-Stand-1S.png?tr=cm-pad_resize,v-2,w-769,h-578,dpr-1",
             "https://images.dailyobjects.com/marche/product-images/1809/conoid-universal-magnetic-charging-stand-images/Conoid-Universal-Magnetic-Charging-Stand-7T.png?tr=cm-pad_resize,v-2,w-769,h-578,dpr-1",
@@ -559,7 +559,7 @@
       "stock": 110,
       "type" : "Milanese Loop",
       "brand": "L'Oreal Paris",
-      "category": "shttps://images.dailyobjects.com/marche/product-images/1801/rose-gold-magnetic-milanese-loop-apple-watchband-42-44mm-images/Rose-Gold-Magnetic-Milanese-Loop-Apple-WatchBand-42-44-45.png?tr=cm-pad_resize,v-2,w-384,h-569,dpr-1",
+      "thumbnail": "https://images.dailyobjects.com/marche/product-images/1801/rose-gold-magnetic-milanese-loop-apple-watchband-42-44mm-images/Rose-Gold-Magnetic-Milanese-Loop-Apple-WatchBand-42-44-45-1.png?tr=cm-pad_resize,v-2,w-384,h-569,dpr-1",
       "images": [
           "https://images.dailyobjects.com/marche/product-images/1801/rose-gold-magnetic-milanese-loop-apple-watchband-42-44mm-images/Rose-Gold-Magnetic-Milanese-Loop-Apple-WatchBand-42-44-45-1.png?tr=cm-pad_resize,v-2,w-384,h-569,dpr-1",
           "https://images.dailyobjects.com/marche/product-images/1801/rose-gold-magnetic-milanese-loop-apple-watchband-42-44mm-images/Rose-Gold-Magnetic-Milanese-Loop-Apple-WatchBand-42-44-45-2.png?tr=cm-pad_resize,v-2,w-384,h-569,dpr-1",

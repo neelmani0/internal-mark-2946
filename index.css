@@ -3,7 +3,30 @@ body {
     padding: 0px;
     width: 100%;
 }
-
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 6%; 
+    right: 7%; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    color: white; 
+    cursor: pointer;
+    padding: 20px; 
+    font-size: 18px;
+    width: 4%;
+    border-radius: 50%;
+    border:solid 2px #20a87e;
+  }
+  #myBtn img{
+    width: 100%;
+    transform: rotate(-90deg);
+  }
+  
+  /* #myBtn:hover {
+    background-color: #555; 
+  } */
 
 
 header{
@@ -234,6 +257,9 @@ nav > ul > li:hover .mega-menu-cases{
 #logo img {
     width: 135px;
     height: 27px;
+}
+#logo:hover{
+    cursor: pointer;
 }
 
 
@@ -1650,15 +1676,16 @@ a {
         /* margin-top: 40px; */
         /* padding-top: 10px; */
         width: 100%;
-        /* display: flex; */
-        background-color: red;
+        display: flex;
+        flex-direction: column;
+        /* background-color: red; */
         /* justify-content: space-between; */
         border-top: 1px solid rgb(224, 216, 216);
     }
 
     #context {
         font-family: sans-serif;
-        width: 100%;
+        width: 80%;
         display: flex;
         justify-content: space-between;
         padding-left: 20px;
@@ -1688,9 +1715,10 @@ a {
     .links-img {
         /* padding-left: 10px; */
         width: 45%;
-        border-left: 1px solid rgb(224, 216, 216);
+        /* border-left: 1px solid rgb(224, 216, 216); */
         padding-top: 40px;
         padding-bottom: 20px;
+        margin-left: 4%;
     }
 
     .social-links-imagges {
@@ -2135,7 +2163,7 @@ a {
         /* padding-top: 10px; */
         width: 100%;
         display: block;
-        background-color: green;
+        /* background-color: green; */
         /* justify-content: space-between; */
         border-top: 1px solid rgb(224, 216, 216);
     }
@@ -2175,6 +2203,7 @@ a {
         border-left: 1px solid rgb(224, 216, 216);
         padding-top: 40px;
         padding-bottom: 20px;
+        margin-left: 4%;
     }
 
     .social-links-imagges {

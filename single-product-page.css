@@ -1,21 +1,30 @@
+body{
+  overflow-x: hidden;
+}
+#container{
+  width: 98%;
+  margin: auto;
+  box-sizing: border-box;
+}
 #product-container {
     display: flex;
     background-color: white;
-    width: 100%;
+    width: 95%;
     margin: auto;
   }
   .wrap {
     display: flex;
     width: 45%;
+    height: 660px;
   }
   #detail-card{
     display: flex;
-    width: 50%;
+    width: 45%;
     margin-left: 50px;
     font-family: Graphik Regular,sans-serif!important;
   }
   .card{
-    width: 70%;
+    width:70%;
     margin: auto;
     
   }
@@ -66,7 +75,7 @@
     font-size: 97%;
     margin-bottom: 7%;
   }
-  input{
+  #detail-card input{
     width: 80%;
     height: 40px;
     border: none;
@@ -97,7 +106,8 @@
   }
 #details-1{
     display: flex;;
-    width: 100%;
+    width: 95%;
+    margin: auto;
 }
 .data{
     align-content: center;
@@ -117,99 +127,62 @@
 }
 #details-2{
     display: flex;;
-    width: 100%;
+    width: 95%;
+    margin: auto;
 }
 #details-3{
     display: flex;;
-    width: 100%;
+    width: 95%;
+    margin: auto;
 }
 #details-4{
     display: flex;;
-    width: 100%;
+    width: 95%;
+    margin: auto;
 }
 #details-5{
     display: flex;;
-    width: 100%;
+    width: 95%;
+    margin: auto;
 }
 #details-6{
     display: flex;;
-    width: 100%;
+    width: 95%;
+    margin: auto;
 }
 #products-1{
     display: flex;;
-    width: 100%;
+    width: 95%;
     font-family: 'Trade Gothic LT Pro', sans-serif !important;
     overflow-x: auto;
+    margin: auto;
 }
-#products-1 div{
+#products-1:hover{
+  cursor: pointer;
+}
+#products-1>div{
    min-width: 15%;
+   width: 15%;
    padding-left: 10px;
    padding-right: 10px;
 }
 #products-1 img{
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-}
-#products-2{
-    display: flex;;
-    width: 100%;
-    font-family: 'Trade Gothic LT Pro', sans-serif !important;
-    overflow-x: auto;
-}
-#products-2 div{
-   min-width: 15%;
-   padding-left: 10px;
-   padding-right: 10px;
-}
-#products-2 img{
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-}
-#products-3{
-    display: flex;;
-    width: 100%;
-    font-family: 'Trade Gothic LT Pro', sans-serif !important;
-    overflow-x: auto;
-}
-#products-3 div{
-   min-width: 15%;
-   padding-left: 10px;
-   padding-right: 10px;
-}
-#products-3 img{
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-}
-#products-4{
-    display: flex;;
-    width: 100%;
-    font-family: 'Trade Gothic LT Pro', sans-serif !important;
-    overflow-x: auto;
-}
-#products-4 div{
-   min-width: 15%;
-   padding-left: 10px;
-   padding-right: 10px;
-}
-#products-4 img{
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-}
-#products-5{
-    display: flex;;
-    width: 100%;
-    font-family: 'Trade Gothic LT Pro', sans-serif !important;
-    overflow-x: auto;
-}
-#products-5 div{
-   min-width: 15%;
-   padding-left: 10px;
-   padding-right: 10px;
-}
-#products-5 img{
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    background-color: #F5F5F5;
 }
 h1{
     font-family: 'Trade Gothic LT Pro', sans-serif !important;
+    margin-left: 3%;
+}
+#products-1>div>p{
+  width: 220px;
+  font-family: 'Trade Gothic LT Pro', sans-serif !important;
+  color: rgba(0,0,0,.87);
+  /* height: 36px;
+  white-space: wrap;
+  overflow: hidden; */
+  font-size: small;
+}
+.hidden{
+  text-overflow: ellipsis;
 }

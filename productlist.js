@@ -1,6 +1,6 @@
 let container = document.getElementById("Products-container");
-let name = JSON.parse(localStorage.getItem("products"))||[]
-let x = name[name.length-1]
+let y = JSON.parse(localStorage.getItem("products"))||[]
+let x = y[y.length-1]
 let bag = "";
 for(let i=0;i<x.length;i++){
     if(x[i]==" "){
@@ -34,9 +34,17 @@ function display(data){
         obj.name = element.title;
         obj.img = element.thumbnail;
         obj.price = element.price;
+        obj.images = element.images;
+        obj.id = element.id;
         let arr =[];
+        let recentArr = JSON.parse(localStorage.getItem("recently-viewed"))||[];
+        if(recentArr.length===12){
+            recentArr.shift();
+        }
+        recentArr.push(obj);
         arr.push(obj);
         localStorage.setItem("single-data",JSON.stringify(arr))
+        localStorage.setItem("recently-viewed",JSON.stringify(recentArr))
         window.location.href = "http://127.0.0.1:5500/single-product-page.html"
     })
     });

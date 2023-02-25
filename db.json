@@ -9702,6 +9702,84 @@
         }
         
     
+
+    ],
+  "new-arivale":[
+    {
+        "id": 1,
+        "name": "Vibrant Red Phone Case",
+        "image": ["https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-pyaar-scissors-black-hybrid-clear-case-cover-for-iphone-13-images/DailyObjects-Pyaar-Scissors-Black-Hybrid-Clear-Case-Cover-For-iPhone-13-2.png?tr=cm-pad_resize,v-2,w-323,h-398,dpr-1",
+           "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-death-stride-2-0-case-cover-for-iphone-12-images/DailyObjects-Death-Stride-2-0-Case-Cover-For-iPhone-12-1.png?tr=cm-pad_resize,v-2,w-768,h-632,dpr-1",
+           "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-death-stride-2-0-case-cover-for-iphone-12-images/DailyObjects-Death-Stride-2-0-Case-Cover-For-iPhone-12-2.png?tr=cm-pad_resize,v-2,w-768,h-632,dpr-1",
+           "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-death-stride-2-0-case-cover-for-iphone-12-images/Feature-banner-stride-2O-iphone-12-3.png?tr=cm-pad_resize,v-2,w-768,h-632,dpr-1"
     
-]
-}
+    
+    ],
+        "price": 24.99,
+        "description": "This vibrant red phone case is made of high-quality silicone and offers superior protection for your iPhone 13.",
+        "in_stock": true,
+        "brand":"Apple",
+        "modal":"iphone 13"
+    },
+    {
+        "id": 2,
+        "name": "Midnight Black Phone Case",
+        "image": ["https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-strong-bond-black-hybrid-clear-case-cover-for-iphone-13-images/DailyObjects-Strong-Bond-Black-Hybrid-Clear-Case-Cover-For-iPhone-13-2.png?tr=cm-pad_resize,v-2,w-323,h-398,dpr-1",
+        "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-death-stride-2-0-case-cover-for-iphone-12-images/DailyObjects-Death-Stride-2-0-Case-Cover-For-iPhone-12-1.png?tr=cm-pad_resize,v-2,w-768,h-632,dpr-1",
+        "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-death-stride-2-0-case-cover-for-iphone-12-images/DailyObjects-Death-Stride-2-0-Case-Cover-For-iPhone-12-2.png?tr=cm-pad_resize,v-2,w-768,h-632,dpr-1",
+        "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-death-stride-2-0-case-cover-for-iphone-12-images/Feature-banner-stride-2O-iphone-12-3.png?tr=cm-pad_resize,v-2,w-768,h-632,dpr-1"
+    
+    ],
+        "price": 29.99,
+        "description": "This sleek and stylish midnight black phone case is made of durable polycarbonate and provides excellent grip and protection for your iPhone 13.",
+        "in_stock": true,
+        "brand":"Apple",
+        "modal":"iphone 13"
+    },
+    {
+        "id": 3,
+        "name": "Pastel Pink Phone Case",
+        "image": ["https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-passion-black-hybrid-clear-case-cover-for-iphone-13-images/DailyObjects-Passion-Black-Hybrid-Clear-Case-Cover-For-iPhone-13-2.png?tr=cm-pad_resize,v-2,w-323,h-398,dpr-1",
+        "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-death-stride-2-0-case-cover-for-iphone-12-images/DailyObjects-Death-Stride-2-0-Case-Cover-For-iPhone-12-1.png?tr=cm-pad_resize,v-2,w-768,h-632,dpr-1",
+        "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-death-stride-2-0-case-cover-for-iphone-12-images/DailyObjects-Death-Stride-2-0-Case-Cover-For-iPhone-12-2.png?tr=cm-pad_resize,v-2,w-768,h-632,dpr-1",
+        "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-death-stride-2-0-case-cover-for-iphone-12-images/Feature-banner-stride-2O-iphone-12-3.png?tr=cm-pad_resize,v-2,w-768,h-632,dpr-1"
+    
+    ],
+        "price": 19.99,
+        "description": "This pastel pink phone case is made of soft TPU material and provides great protection against scratches and drops.",
+        "in_stock": true,
+        "brand":"Apple",
+        "modal":"iphone 13"
+    },
+    {
+        "id": 4,
+        "name": "Ocean Blue Phone Case",
+        "image": ["https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-mohobbat-sharbat-black-hybrid-clear-case-cover-for-iphone-13-images/DailyObjects-Mohobbat-Sharbat-Black-Hybrid-Clear-Case-Cover-For-iPhone-13-2.png?tr=cm-pad_resize,v-2,w-323,h-398,dpr-1",
+        "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-death-stride-2-0-case-cover-for-iphone-12-images/DailyObjects-Death-Stride-2-0-Case-Cover-For-iPhone-12-1.png?tr=cm-pad_resize,v-2,w-768,h-632,dpr-1",
+        "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-death-stride-2-0-case-cover-for-iphone-12-images/DailyObjects-Death-Stride-2-0-Case-Cover-For-iPhone-12-2.png?tr=cm-pad_resize,v-2,w-768,h-632,dpr-1",
+        "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-death-stride-2-0-case-cover-for-iphone-12-images/Feature-banner-stride-2O-iphone-12-3.png?tr=cm-pad_resize,v-2,w-768,h-632,dpr-1"
+    
+    ],
+        "price": 24.99,
+        "description": "This ocean blue phone case is made of high-quality silicone and provides excellent shock absorption and drop protection for your iPhone 13.",
+        "in_stock": true,
+        "brand":"Apple",
+        "modal":"iphone 13"
+    },
+    {
+        "id": 5,
+        "name": "Clear Phone Case",
+        "image":[ "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-ishq-matchsticks-black-hybrid-clear-case-cover-for-iphone-13-images/DailyObjects-Ishq-Matchsticks-Black-Hybrid-Clear-Case-Cover-For-iPhone-13-2.png?tr=cm-pad_resize,v-2,w-323,h-398,dpr-1",
+        "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-death-stride-2-0-case-cover-for-iphone-12-images/DailyObjects-Death-Stride-2-0-Case-Cover-For-iPhone-12-1.png?tr=cm-pad_resize,v-2,w-768,h-632,dpr-1",
+        "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-death-stride-2-0-case-cover-for-iphone-12-images/DailyObjects-Death-Stride-2-0-Case-Cover-For-iPhone-12-2.png?tr=cm-pad_resize,v-2,w-768,h-632,dpr-1",
+        "https://images.dailyobjects.com/marche/product-images/1101/dailyobjects-death-stride-2-0-case-cover-for-iphone-12-images/Feature-banner-stride-2O-iphone-12-3.png?tr=cm-pad_resize,v-2,w-768,h-632,dpr-1"
+    
+    ],
+        "price": 14.99,
+        "description": "This crystal clear phone case is made of tough polycarbonate and provides great protection while showing off the sleek design of your iPhone 13.",
+        "in_stock": true,
+        "brand":"Apple",
+        "modal":"iphone 13"
+    }
+  ]
+    }

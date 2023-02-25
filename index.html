@@ -822,6 +822,8 @@
                                 alt=""></a>
                             
                         </span>
+                        <span
+                        class="cartcount">0</span>
                     </button>
                     <button id="user">
                         <span>
@@ -1530,5 +1532,13 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+let cartcount = document.querySelector(".cartcount");
+
+let cartdata = JSON.parse(localStorage.getItem("cartdata"))||[];
+if(cartdata.length===0){
+    cartcount.style.display = "none"
+}
+cartcount.innerText = cartdata.length
 </script>
 </html>

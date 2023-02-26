@@ -1,9 +1,13 @@
 //const { data } = require("cypress/types/jquery");
 
 //const { data } = require("cypress/types/jquery")
+
+let cartdata = JSON.parse(localStorage.getItem("cartdata")) || []
 const baseurl = `http://127.0.0.1:9090/`
 var x = "CHARGING-SOLUTIONS";
 let lowstocks = 0;
+let pending = document.getElementById("pending");
+pending.innerText = cartdata.length;
 var items = document.getElementById("items")
 let totalstock = document.getElementById("zero stocks");
 let lowstockcount = document.getElementById("low-stocks")
@@ -60,7 +64,7 @@ function fetchdata() {
         .then((res) => res.json())
         .then((data) => {
             // console.log(data)
-            lowstocks = data.filter((el) => el.stock < 50)
+            lowstocks = data.filter((el) => el.stock <= 50)
             lowstockcount.innerText = lowstocks.length;
             console.log(lowstocks)
             totalstock.innerText = data.length;
@@ -71,6 +75,7 @@ function fetchdata() {
             console.log(er)
         })
 }
+
 
 
 

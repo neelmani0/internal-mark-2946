@@ -20,6 +20,10 @@ header {
     padding: 1rem;
 }
 
+{
+    position: fixed;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -44,7 +48,7 @@ main {
     max-width: 960px;
     margin: 2rem auto;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 2fr 2fr 1fr;
     grid-gap: 2rem;
 }
 
@@ -200,4 +204,10 @@ footer p {
     background-color: #575757;
     color: #fff;
     padding: 1rem;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #333;
 }

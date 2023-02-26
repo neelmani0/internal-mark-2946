@@ -1,0 +1,16 @@
+{
+    "folders": [
+		{
+			"path": "../unit 3 project"
+		},
+		{
+			"path": "../internal"
+		},
+		{
+			"path": "."
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "internal"
+    }
+}

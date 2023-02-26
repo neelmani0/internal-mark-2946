@@ -300,9 +300,6 @@ nav > ul > li:hover .mega-menu-cases{
 
 
 /* ----------symbol---------- */
-#symbol {
-    /* border: 1px solid brown; */
-}
 
 #symbol>div>button>span>img {
     width: 16px;
@@ -666,9 +663,6 @@ a {
 
 
 
-.footer-1 {
-    /* border-bottom: 1px solid gray; */
-}
 
 .footer-1 h2 {
     text-align: center;
@@ -1145,10 +1139,6 @@ a {
     }
 
 
-    /*  */
-    .footer-1 {
-        /* border-bottom: 1px solid gray; */
-    }
 
     .footer-1 h2 {
         text-align: center;
@@ -1625,9 +1615,6 @@ a {
 
 
     /*  */
-    .footer-1 {
-        /* border-bottom: 1px solid gray; */
-    }
 
     .footer-1 h2 {
         text-align: center;
@@ -2114,10 +2101,6 @@ a {
     }
 
 
-    /*  */
-    .footer-1 {
-        /* border-bottom: 1px solid gray; */
-    }
 
     .footer-1 h2 {
         text-align: center;

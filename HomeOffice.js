@@ -56,3 +56,12 @@ let logo = document.getElementById("logo")
     logo.addEventListener("click",()=>{
         window.location.href="http://127.0.0.1:5500/index.html"
     })
+
+
+    let cartcount = document.querySelector(".cartcount");
+
+let cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
+if (cartdata.length === 0) {
+    cartcount.style.display = "none"
+}
+cartcount.innerText = cartdata.length;

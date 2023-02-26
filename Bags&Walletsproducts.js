@@ -1,6 +1,10 @@
 let container = document.getElementById("Products-container");
+let h2 = document.querySelector("h2");
 let y = JSON.parse(localStorage.getItem("products"))||[]
 let x = y[y.length-1]
+
+h2.innerText = x;
+console.log(x)
 let bag = "";
 for(let i=0;i<x.length;i++){
     if(x[i]==" "){
@@ -31,7 +35,17 @@ function display(data){
     priceRemove.setAttribute("class","span1") 
     price.setAttribute("class","span2")
     pricediv.setAttribute("class","pricediv")
-    img.src = element.thumbnail;
+    
+    if(element.thumbnail ===""){
+        img.src = element.image[0];
+        
+    }
+    else{
+        
+        img.src = element.thumbnail;
+        
+    }
+    
     name.textContent = element.title;
     price.textContent = `Rs.${element.price}`;
     pricediv.append(price,priceRemove)
@@ -71,3 +85,38 @@ function display(data){
         cartcount.style.display = "none"
     }
     cartcount.innerText = cartdata.length;
+
+
+
+
+    fetch(`http://127.0.0.1:9090/CHARGING-SOLUTIONS-CATEGORY`)
+    .then((res) => {
+        return res.json();
+    })
+    .then((res) => {
+
+        let filterdata=res[`${bag}`];
+
+        console.log(filterdata)
+        displaycategory(filterdata)
+    })
+
+
+
+let filterEl = document.querySelector("#filter-div");
+function displaycategory(data){
+    data.forEach((element)=>{
+    let filterCard = document.createElement("div");
+    let image = document.createElement("img");
+    image.src = element.image;
+
+    let name = document.createElement("p");
+    name.textContent = element.name;
+
+    filterCard.append(image,name)
+
+    filterEl.append(filterCard)
+
+    })
+    
+}

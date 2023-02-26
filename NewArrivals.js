@@ -11,7 +11,7 @@ let container = document.getElementById("category-container");
 let data = [
     {
         img:"https://images.dailyobjects.com/marche/icons/new-arrival/all.png?tr=cm-pad_resize,v-2,w-160,h-160,dpr-1",
-        category :" ALL "
+        category :"ALL"
     },
     {
         img:"https://images.dailyobjects.com/marche/icons/category/platrorm-desk-collection.png?tr=cm-pad_resize,v-2,w-160,h-160,dpr-1",
@@ -35,13 +35,15 @@ let data = [
     },
     {
         img:"https://images.dailyobjects.com/marche/icons/new-arrival/pu-snap-sleeves.jpg?tr=cm-pad_crop,v-2,w-160,h-160,dpr-1",
-        category :"MACBOOK SLEEVES"
+        category :"LAPTOP MACKBOOK SLEEVES"
     },
     {
         img:"https://images.dailyobjects.com/marche/icons/new-arrival/collections.png?tr=cm-pad_resize,v-2,w-160,h-160,dpr-1",
         category :"COLLECTIONS"
     }
 ]
+
+
 let arr = JSON.parse(localStorage.getItem("products"))||[]
 display(data)
 function display(data){
@@ -57,9 +59,10 @@ function display(data){
         card.append(img,h3)
         card.addEventListener("click",()=>{
             console.log(element.category)
+            arr.shift()
             arr.push(element.category)
             localStorage.setItem("products",JSON.stringify(arr))
-            window.location.href = "http://127.0.0.1:5500/productlist.html"
+            window.location.href = "http://127.0.0.1:5500/NewArrivalProducts.html"
         })
     });
 }
@@ -67,3 +70,12 @@ let logo = document.getElementById("logo")
     logo.addEventListener("click",()=>{
         window.location.href="http://127.0.0.1:5500/index.html"
     })
+
+
+    let cartcount = document.querySelector(".cartcount");
+    
+    let cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
+    if (cartdata.length === 0) {
+        cartcount.style.display = "none"
+    }
+    cartcount.innerText = cartdata.length;

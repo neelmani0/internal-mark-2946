@@ -5,8 +5,8 @@
     <title>SignUp and Login</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="signin and signup.css">
-    <link rel="icon" href="https://www.anthropologie.com/favicon.ico">
+    <link rel="stylesheet" href="./signin&signup.css">
+    <!-- <link rel="icon" href="https://www.anthropologie.com/favicon.ico"> -->
 </head>
 
 <body>
@@ -14,7 +14,7 @@
     <div class="container" id="container">
         <div class="form-container sign-up-container">
 
-            <form action="">
+            <form action="" id="form1">
                 <h1>Create Account</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fa fa-facebook"></i></a>
@@ -24,24 +24,24 @@
                 <span>or use your email for registration</span>
                 <input type="text" name="name" placeholder="Name" id="name">
                 <input type="email" name="email" placeholder="Email" id="email">
-                <input type="password" name="password" placeholder="Password">
-                <button class="submit">SignUp</button>
+                <input type="password" name="password" placeholder="Password" id="password">
+                <input type="submit" value="submit" id="button1">
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
-                <h1>Sign In</h1>
+            <form action="" id="form2">
+                <h1 id="head">Sign In</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fa fa-facebook"></i></a>
                     <a href="#" class="social"><i class="fa fa-google"></i></a>
                     <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
                 </div>
                 <span>or use your account</span>
-                <input type="email" name="email" placeholder="Email">
-                <input type="password" name="password" placeholder="Password">
+                <input type="email" name="email" placeholder="Email" id="email-log">
+                <input type="password" name="password" placeholder="Password" id="password-log">
                 <a href="#">Forgot Your Password</a>
 
-                <button class="submit">Sign In</button>
+                <input type="submit" value="submit" id="button2">
             </form>
         </div>
         <div class="overlay-container">
@@ -68,11 +68,12 @@
 
 <script type="text/javascript">
 
-    let storedData = JSON.parse(localStorage.getItem("details")) || []
+    // let storedData = JSON.parse(localStorage.getItem("details")) || []
 
-    
+
     const signUpButton = document.getElementById('signUp');
     const signInButton = document.getElementById('signIn');
+
     const container = document.getElementById('container');
 
     signUpButton.addEventListener('click', () => {
@@ -83,16 +84,87 @@
     });
 
 
+    let signupForm = document.getElementById("form1");
     let nameInp = document.getElementById("name");
     let emailInp = document.getElementById("email");
-    let submitBtn = document.querySelector(".submit");
-    submitBtn.addEventListener("click", (e) => {
+    let passwordInp = document.getElementById("password")
 
-        let formdata = {
-            name: nameInp.value,
+    let database = JSON.parse(localStorage.getItem("userdetails"))
+    if (database === null) {
+        database = []
+    }
+
+    signupForm.addEventListener("submit", (e) => {
+        // e.preventDefault();
+
+        let userdata = {
+            user: nameInp.value,
             email: emailInp.value,
+            password: passwordInp.value,
         }
-        storedData.push(formdata);
-        localStorage.setItem("details", JSON.stringify(storedData));
+
+        database.push(userdata);
+        localStorage.setItem("userdetails", JSON.stringify(database))
     })
+
+
+
+
+
+
+
+
+
+
+
+
+    let loginForm = document.getElementById("form2");
+  let head = document.getElementById("head")
+  let emailInput = document.getElementById("email-log")
+  let passwordInput = document.getElementById("password-log")
+
+//   let lsData = JSON.parse(localStorage.getItem("userdetails"));
+//   if (lsData === null) {
+//     lsData = []
+//   }
+//   console.log(lsData)
+
+  loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let storeData = JSON.parse(localStorage.getItem("data"))
+    if (storeData == null) {
+      storeData = []
+    }
+
+
+    let formData = {
+      email1: emailInput.value,
+      password1: passwordInput.value,
+    }
+    storeData.push(formData)
+    // localStorage.setItem("userdetails", JSON.stringify(lsData))
+
+    checkData(database, storeData)
+  })
+
+  function checkData(lsData, storeData) {
+
+    for (let i = 0; i < lsData.length; i++) {
+      console.log(lsData[i])
+      if (lsData[i].email == storeData[i].email1 && lsData[i].password == storeData[i].password1) {
+         alert("Signin Succesfull")
+         let logindone = "ok"
+         localStorage.setItem("logindone",JSON.stringify(logindone))
+         window.location.href="http://127.0.0.1:5500/index.html"
+      }
+      else{
+        alert("wrong credentials")
+      }
+    }
+     
+  }
+
+
+
 </script>

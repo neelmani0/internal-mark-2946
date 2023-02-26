@@ -11,7 +11,7 @@ let container = document.getElementById("category-container");
 let data = [
     {
         img: "https://images.dailyobjects.com/marche/icons/sub-category/wallets.png?tr=cm-pad_resize,v-2,w-160,h-160,dpr-1",
-        category: " WALLETS "
+        category: "WALLETS"
     },
     {
         img: "https://images.dailyobjects.com/marche/icons/category/crossbody-bags-intermediate-filter-icon.jpg?tr=cm-pad_crop,v-2,w-160,h-160,dpr-1",
@@ -19,7 +19,7 @@ let data = [
     },
     {
         img: "https://images.dailyobjects.com/marche/icons/category/messenger-bag-filter-icon.jpg?tr=cm-pad_crop,v-2,w-160,h-160,dpr-1",
-        category: "MESSENGER BAGS "
+        category: "MESSENGER BAGS"
     },
     {
         img: "https://images.dailyobjects.com/marche/icons/sub-category/tote-bags.png?tr=cm-pad_resize,v-2,w-160,h-160,dpr-1",
@@ -38,6 +38,8 @@ let data = [
         category: "POUCHES"
     }
 ]
+
+let arr = JSON.parse(localStorage.getItem("products"))||[]
 display(data)
 function display(data) {
     container.innerHTML = "";
@@ -51,8 +53,10 @@ function display(data) {
         container.append(card);
         card.append(img, h3)
         card.addEventListener("click", () => {
-            localStorage.setItem("products", JSON.stringify(data))
-            window.location.href = "http://127.0.0.1:5500/productlist.html"
+            arr.shift()
+            arr.push(element.category)
+            localStorage.setItem("products",JSON.stringify(arr))
+            window.location.href = "http://127.0.0.1:5500/Bags&Walletsproducts.html"
         })
     });
 }

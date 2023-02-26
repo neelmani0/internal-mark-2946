@@ -11,7 +11,7 @@ let container = document.getElementById("category-container");
 let data = [
     {
         img:"https://images.dailyobjects.com/marche/assets/images/other/charging-solution-icon.jpg?tr=cm-pad_crop,v-2,w-160,h-160,dpr-1",
-        category :" CHARGING SOLUTIONS "
+        category :"CHARGING SOLUTIONS"
     },
     {
         img:"https://images.dailyobjects.com/marche/tmp/stands-main.png?tr=cm-pad_resize,v-2,w-160,h-160,dpr-1",
@@ -19,7 +19,7 @@ let data = [
     },
     {
         img:"https://images.dailyobjects.com/marche/tmp/organiser-main.png?tr=cm-pad_resize,v-2,w-160,h-160,dpr-1",
-        category :"ORGANISERS "
+        category :"ORGANISERS"
     },
     {
         img:"https://images.dailyobjects.com/marche/icons/category/desk.png?tr=cm-pad_resize,v-2,w-160,h-160,dpr-1",
@@ -34,6 +34,10 @@ let data = [
         category :"STATIONARY"
     }
 ]
+
+
+
+let arr = JSON.parse(localStorage.getItem("products"))||[]
 display(data)
 function display(data){
     container.innerHTML= "";
@@ -47,8 +51,10 @@ function display(data){
         container.append(card);
         card.append(img,h3)
         card.addEventListener("click",()=>{
-            localStorage.setItem("products",JSON.stringify(data))
-            window.location.href = "http://127.0.0.1:5500/productlist.html"
+            arr.shift()
+            arr.push(element.category)
+            localStorage.setItem("products",JSON.stringify(arr))
+            window.location.href = "http://127.0.0.1:5500/HomeOfficeproducts.html"
         })
     });
 }

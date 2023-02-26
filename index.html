@@ -827,14 +827,14 @@
                     </button>
                     <button id="user">
                         <span>
-                            <a href=""><img src="https://images.dailyobjects.com/marche/icons/Profile.png?tr=cm-pad_resize,v-2,w-16,h-16,dpr-1"
+                            <a href="./index-singhup-singhup/signin&signup.html"><img src="https://images.dailyobjects.com/marche/icons/Profile.png?tr=cm-pad_resize,v-2,w-16,h-16,dpr-1"
                                 alt=""></a>
                             
                         </span>
                     </button>
                     <button id="search">
                         <span>
-                            <a href=""><img src="https://images.dailyobjects.com/marche/icons/Search.png?tr=cm-pad_resize,v-2,w-16,h-16,dpr-1"
+                            <a href="./searchPage.html"><img src="https://images.dailyobjects.com/marche/icons/Search.png?tr=cm-pad_resize,v-2,w-16,h-16,dpr-1"
                                 alt=""></a>
                             
                         </span>
@@ -1540,6 +1540,20 @@ if(cartdata.length===0){
     cartcount.style.display = "none"
 }
 cartcount.innerText = cartdata.length;
+
+
+let done = JSON.parse(localStorage.getItem("logindone"))||"";
+console.log(done)
+if(done==="ok"){
+
+    console.log("done")
+}else{
+    setTimeout(() => {
+    alert("Please login to continue");
+    window.location.href = "http://127.0.0.1:5500/index-singhup-singhup/signin&signup.html"
+}, 5000);
+}
+
 
 </script>
 </html>

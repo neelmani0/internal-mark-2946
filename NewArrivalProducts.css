@@ -36,6 +36,7 @@
     background-color: #F5F5F5;
     opacity:0.8;
     transition: 1s ease;
+    height: 400px;
 }
 #Products-container img:hover{
     opacity:2;

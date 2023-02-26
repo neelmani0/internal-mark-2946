@@ -1120,7 +1120,7 @@
                     </button>
                     <button id="search">
                         <span>
-                            <a href=""><img
+                            <a href="./searchPage.html"><img
                                     src="https://images.dailyobjects.com/marche/icons/Search.png?tr=cm-pad_resize,v-2,w-16,h-16,dpr-1"
                                     alt=""></a>
 
@@ -1310,9 +1310,9 @@
 
 
 
-    function checkout() {
-        window.location.href = "./checkoutpage.html"
-    }
+    // function checkout() {
+    //     window.location.href = "./checkoutpage.html"
+    // }
 
     let Data = JSON.parse(localStorage.getItem("recently-viewed")) || [];
 
@@ -1415,6 +1415,8 @@
             shipping = "FREE"
         }
 
+        
+
 
         function billing(price, datalength, a, shipping, masaiCoupon) {
             let va = `
@@ -1460,6 +1462,20 @@
 
                     billing(price, datalength, a, shipping, masaiCoupon)
                 }
+            })
+
+            let checkoutbtn = document.getElementById("checkout-btn");
+
+            checkoutbtn.addEventListener("click",()=>{
+
+                let paymentdata = JSON.parse(localStorage.getItem("product-details"))
+
+                paymentdata.push()
+
+                window.location.href = "http://127.0.0.1:5500/checkout.html"
+
+                
+                
             })
 
 

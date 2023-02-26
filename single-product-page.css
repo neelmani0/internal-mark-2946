@@ -169,6 +169,7 @@ body{
 #products-1 img{
     width: 100%;
     background-color: #F5F5F5;
+    height: 280px;
 }
 h1{
     font-family: 'Trade Gothic LT Pro', sans-serif !important;

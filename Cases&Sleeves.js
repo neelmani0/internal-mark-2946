@@ -11,15 +11,15 @@ let container = document.getElementById("category-container");
 let data = [
     {
         img: "https://images.dailyobjects.com/marche/tmp/phone-cases.png?tr=cm-pad_resize,v-2,w-160,h-160,dpr-1",
-        category: " PHONE CASES "
+        category: "PHONE CASES"
     },
     {
         img: "https://images.dailyobjects.com/marche/icons/category/cases-sleeves-intermediate-image.jpg?tr=cm-pad_crop,v-2,w-160,h-160,dpr-1",
-        category: "LAPTOP/MACKBOOK SLEEVES"
+        category: "LAPTOP MACBOOK SLEEVES"
     },
     {
         img: "https://images.dailyobjects.com/marche/icons/category/airpod-case-cover-updated.jpg?tr=cm-pad_crop,v-2,w-160,h-160,dpr-1",
-        category: "AIRPODS CASE COVER "
+        category: "AIRPODS CASE COVER"
     },
     {
         img: "https://images.dailyobjects.com/marche/icons/category/ipad-new.png?tr=cm-pad_resize,v-2,w-160,h-160,dpr-1",
@@ -38,6 +38,8 @@ let data = [
         category: "AIRTAG CASES"
     }
 ]
+
+let arr = JSON.parse(localStorage.getItem("products"))||[]
 display(data)
 function display(data) {
     container.innerHTML = "";
@@ -51,8 +53,11 @@ function display(data) {
         container.append(card);
         card.append(img, h3)
         card.addEventListener("click", () => {
-            localStorage.setItem("products", JSON.stringify(data))
-            window.location.href = "http://127.0.0.1:5500/productlist.html"
+            arr.shift()
+            arr.push(element.category)
+            localStorage.setItem("products",JSON.stringify(arr))
+            localStorage.removeItem("storedata")
+            window.location.href = "http://127.0.0.1:5500/Cases&Sleevespproducts.html"
         })
     });
 }

@@ -908,7 +908,7 @@ body{
                 <div>
                     <button id="cart">
                         <span>
-                            <a href=""><img src="https://images.dailyobjects.com/marche/icons/Bag.png?tr=cm-pad_resize,v-2,w-16,h-16,dpr-1"
+                            <a href="./cart.html"><img src="https://images.dailyobjects.com/marche/icons/Bag.png?tr=cm-pad_resize,v-2,w-16,h-16,dpr-1"
                                 alt=""></a>
                             
                         </span>
@@ -1052,6 +1052,20 @@ let suggestions = [
     
 ];
 
+
+let logo = document.getElementById("logo")
+    logo.addEventListener("click",()=>{
+        window.location.href="http://127.0.0.1:5500/index.html"
+    })
+
+
+    let cartcount = document.querySelector(".cartcount");
+    
+    let cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
+    if (cartdata.length === 0) {
+        cartcount.style.display = "none"
+    }
+    cartcount.innerText = cartdata.length;
 
 
 

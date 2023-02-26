@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,102 +9,167 @@
     <script src="https://kit.fontawesome.com/0d657c1c48.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="./faviocn.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="./faviocn.png" type="image/x-icon"> -->
 
     <style>
-       *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
 
-body{
-  background: #fff;
-  padding: 0 20px;
-}
+        body {
+            background: #fff;
+            padding: 0 20px;
+        }
 
-::selection{
-  color: #fff;
-  background: #000;
-}
+        ::selection {
+            color: #fff;
+            background: #000;
+        }
 
-.wrapper{
-  max-width: 80%;
-  margin: 150px auto;
-}
+        .wrapper {
+            max-width: 80%;
+            margin: 70px auto;
+        }
 
-.wrapper .search-input{
-  background: #fff;
-  width: 100%;
-  border-radius: 5px;
-  position: relative;
-  /* box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12); */
-}
+        .wrapper .search-input {
+            background: #fff;
+            width: 100%;
+            border-radius: 5px;
+            position: relative;
+            /* box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12); */
+        }
 
-.search-input input{
-  height: 55px;
-  width: 100%;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  padding: 0 60px 0 20px;
-  font-size: 18px;
-  /* box-shadow: 0px 1px 5px rgba(0,0,0,0.1); */
-  border-bottom: 3.5px solid #20a87e;
-}
+        .search-input input {
+            height: 55px;
+            width: 100%;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding: 0 60px 0 20px;
+            font-size: 18px;
+            /* box-shadow: 0px 1px 5px rgba(0,0,0,0.1); */
+            border-bottom: 3.5px solid #20a87e;
+        }
 
-.search-input.active input{
-  border-radius: 5px 5px 0 0;
-}
+        .search-input.active input {
+            border-radius: 5px 5px 0 0;
+        }
 
-.search-input .autocom-box{
-  padding: 0;
-  opacity: 0;
-  pointer-events: none;
-  max-height: 280px;
-  overflow-y: auto;
-  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
-}
+        .search-input .autocom-box {
+            padding: 0;
+            opacity: 0;
+            pointer-events: none;
+            max-height: 280px;
+            overflow-y: auto;
+            box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+        }
 
-.search-input.active .autocom-box{
-  padding: 10px 8px;
-  opacity: 1;
-  pointer-events: auto;
-  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
-}
+        .search-input.active .autocom-box {
+            padding: 10px 8px;
+            opacity: 1;
+            pointer-events: auto;
+            box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+        }
 
-.autocom-box li{
-  list-style: none;
-  padding: 8px 12px;
-  display: none;
-  width: 100%;
-  cursor: default;
-  border-radius: 3px;
-}
+        .autocom-box li {
+            list-style: none;
+            padding: 8px 12px;
+            display: none;
+            width: 100%;
+            cursor: default;
+            border-radius: 3px;
+        }
 
-.search-input.active .autocom-box li{
-  display: block;
-}
-.autocom-box li:hover{
-  background: #f2f2f2;
-}
+        .search-input.active .autocom-box li {
+            display: block;
+        }
 
-.search-input .icon{
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  height: 55px;
-  width: 55px;
-  text-align: center;
-  line-height: 55px;
-  font-size: 20px;
-  color: #000;
-  cursor: pointer;
-}
+        .autocom-box li:hover {
+            background: #f2f2f2;
+        }
 
+        .search-input .icon {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            height: 55px;
+            width: 55px;
+            text-align: center;
+            line-height: 45px;
+            font-size: 20px;
+            color: #000;
+            cursor: pointer;
+        }
+
+        .search-div {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 24% 24% 24% 24%;
+            gap: 20px;
+            /* background-color: #20a87e; */
+        }
+
+        .search-div>div {
+            width: 100%;
+            padding: 5px;
+            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+            border-radius: 5px;
+            /* background-color: red; */
+        }
+
+        .search-div>div img {
+            width: 100%;
+            height: 80%;
+            background-color: #f5f5f5;
+        }
+
+        .search-div>div>p:nth-child(2) {
+            line-height: 20px;
+            padding: 0px 10px;
+            font-size: 14px;
+        }
+
+        
+        
+
+        .price-div{
+            display: flex;
+        }
+
+        .price-div p:nth-child(1) {
+            line-height: 20px;
+            padding: 0px 10px;
+            font-weight: bold;
+            color: black;
+            margin-top: 10px;
+           width: 100px;
+           /* text-decoration: line-through; */
+        }
+
+        .price-div span{
+            line-height: 20px;
+            padding: 0px 10px;
+            font-weight: bold;
+            color: gray;
+            margin-top: 10px;
+           width: 100px;
+           text-decoration: line-through;
+        }
+
+
+        #sort-product{
+            padding: 5px 10px;
+            font-size: 14px;
+            margin-left: 20px;
+
+        }
     </style>
 </head>
+
 <body>
 
     <header>
@@ -372,7 +438,7 @@ body{
                             </div>
 
                             <div class="mega-menu-cases-images">
-                                <div  id="conext-type">
+                                <div id="conext-type">
                                     <h3><a href=""> LAPTOP/MACKBOOK SLEEVES</a></h3>
                                     <h3><a href=""> AIRPOD CASES</a></h3>
                                     <h3><a href=""> MESSENGER BAGS</a></h3>
@@ -381,7 +447,8 @@ body{
                                     <h3><a href=""> AIRTAG CASES</a></h3>
                                 </div>
                                 <div id="imag-1">
-                                    <img src="https://images.dailyobjects.com/marche/assets/images/other/airpods-cases-sleeves-page-dropdown-image.jpg?tr=cm-pad_crop,v-2,w-1000,w-240,h-653,dpr-1" alt="">
+                                    <img src="https://images.dailyobjects.com/marche/assets/images/other/airpods-cases-sleeves-page-dropdown-image.jpg?tr=cm-pad_crop,v-2,w-1000,w-240,h-653,dpr-1"
+                                        alt="">
                                 </div>
                             </div>
                         </div>
@@ -427,7 +494,7 @@ body{
                                     <li>
                                         <a href="">For iPad</a>
                                     </li>
-                                    
+
                                 </ul>
                             </div>
                             <div class="mega-menu-cases-items">
@@ -454,7 +521,7 @@ body{
                                         <a href="">For Monitor</a>
                                     </li>
 
-                                    
+
                                 </ul>
                             </div>
                             <div class="mega-menu-cases-items">
@@ -479,10 +546,10 @@ body{
 
                                 </ul>
                             </div>
-                            
+
 
                             <div class="mega-menu-cases-images">
-                                <div  id="conext-type">
+                                <div id="conext-type">
                                     <h3><a href="">ORGANISERS</a> </h3>
                                     <h3><a href="">PHONE WALLET</a> </h3>
                                     <h3><a href="">KEYCHAIN</a> </h3>
@@ -491,7 +558,8 @@ body{
                                     <h3><a href="">MASKS</a> </h3>
                                 </div>
                                 <div id="imag-2">
-                                    <img src="https://images.dailyobjects.com/marche/assets/images/other/accessories-update-1.jpg?tr=cm-pad_crop,v-2,w-1000,w-76,h-653,dpr-1" alt="">
+                                    <img src="https://images.dailyobjects.com/marche/assets/images/other/accessories-update-1.jpg?tr=cm-pad_crop,v-2,w-1000,w-76,h-653,dpr-1"
+                                        alt="">
                                 </div>
                             </div>
                         </div>
@@ -551,7 +619,7 @@ body{
                                     <li>
                                         <a href="">Shuttle Phone</a>
                                     </li>
-                                    
+
                                 </ul>
                             </div>
                             <div class="mega-menu-cases-items">
@@ -578,22 +646,23 @@ body{
                                         <a href="">08:01</a>
                                     </li>
 
-                                    
+
                                 </ul>
                             </div>
-                            
-                            
+
+
 
                             <div class="mega-menu-cases-images">
-                                <div  id="conext-type">
+                                <div id="conext-type">
                                     <h3><a href="">MESSENGER BAGS</a> </h3>
                                     <h3><a href="">BAGPACKS</a> </h3>
                                     <h3><a href="">DUFFLE BAGS</a> </h3>
                                     <h3><a href="">POUCHES</a> </h3>
-                                    
+
                                 </div>
                                 <div id="imag-3">
-                                    <img src="https://images.dailyobjects.com/marche/assets/images/other/bags-and-wallets-dropdown-update-4.jpg?tr=cm-pad_crop,v-2,w-1000,w-262,h-380,dpr-1" alt="">
+                                    <img src="https://images.dailyobjects.com/marche/assets/images/other/bags-and-wallets-dropdown-update-4.jpg?tr=cm-pad_crop,v-2,w-1000,w-262,h-380,dpr-1"
+                                        alt="">
                                 </div>
                             </div>
                         </div>
@@ -639,7 +708,7 @@ body{
                                     <li>
                                         <a href="">Folio</a>
                                     </li>
-                                    
+
                                 </ul>
                             </div>
                             <div class="mega-menu-cases-items">
@@ -664,9 +733,9 @@ body{
 
                                 </ul>
                             </div>
-                            
+
                             <div class="mega-menu-cases-images">
-                                <div  id="conext-type">
+                                <div id="conext-type">
                                     <h3><a href="">STATIONARY</a> </h3>
                                     <h3><a href="">DRINKWARE</a> </h3>
                                     <h3><a href="">CHARGING SOLUTIONS</a> </h3>
@@ -675,7 +744,8 @@ body{
                                     <h3><a href="">MASKS</a> </h3> -->
                                 </div>
                                 <div id="imag-4">
-                                    <img src="https://images.dailyobjects.com/marche/assets/images/other/home-office-update-stationary-dropdown-up.png?tr=cm-pad_resize,v-2,w-1000,w-135,h-380,dpr-1" alt="">
+                                    <img src="https://images.dailyobjects.com/marche/assets/images/other/home-office-update-stationary-dropdown-up.png?tr=cm-pad_resize,v-2,w-1000,w-135,h-380,dpr-1"
+                                        alt="">
                                 </div>
                             </div>
                         </div>
@@ -731,7 +801,7 @@ body{
                                     <li>
                                         <a href="">Misfit Millennials Collection</a>
                                     </li>
-                                    
+
                                 </ul>
                             </div>
                             <div class="mega-menu-cases-items">
@@ -758,10 +828,10 @@ body{
                                         <a href="">For Monitor</a>
                                     </li> -->
 
-                                    
+
                                 </ul>
                             </div>
-                            
+
 
                             <div class="mega-menu-cases-images">
                                 <!-- <div  id="conext-type">
@@ -773,7 +843,8 @@ body{
                                     <h3><a href="">MASKS</a> </h3>
                                 </div> -->
                                 <div id="imag-5">
-                                    <img src="https://images.dailyobjects.com/marche/assets/images/other/new-collection-dropdown-desktop-update-3.jpg?tr=cm-pad_crop,v-2,w-1000,w-383,h-380,dpr-1" alt="">
+                                    <img src="https://images.dailyobjects.com/marche/assets/images/other/new-collection-dropdown-desktop-update-3.jpg?tr=cm-pad_crop,v-2,w-1000,w-383,h-380,dpr-1"
+                                        alt="">
                                 </div>
                             </div>
                         </div>
@@ -819,7 +890,7 @@ body{
                                     <li>
                                         <a href="">For iPad</a>
                                     </li>
-                                    
+
                                 </ul>
                             </div>
                             <div class="mega-menu-cases-items">
@@ -846,7 +917,7 @@ body{
                                         <a href="">For Monitor</a>
                                     </li>
 
-                                    
+
                                 </ul>
                             </div>
                             <div class="mega-menu-cases-items">
@@ -871,9 +942,9 @@ body{
 
                                 </ul>
                             </div>
-                            
- 
-                             <div class="mega-menu-cases-images">
+
+
+                            <div class="mega-menu-cases-images">
                                 <!-- <div  id="conext-type">
                                     <h3><a href="">ORGANISERS</a> </h3>
                                     <h3><a href="">PHONE WALLET</a> </h3>
@@ -883,7 +954,8 @@ body{
                                     <h3><a href="">MASKS</a> </h3>
                                 </div> -->
                                 <div id="imag-6">
-                                    <img src="https://images.dailyobjects.com/marche/assets/images/other/gifting-page-drop-down-banner-1-update-up.png?tr=cm-pad_resize,v-2,w-1000,w-151,h-380,dpr-1" alt="">
+                                    <img src="https://images.dailyobjects.com/marche/assets/images/other/gifting-page-drop-down-banner-1-update-up.png?tr=cm-pad_resize,v-2,w-1000,w-151,h-380,dpr-1"
+                                        alt="">
                                 </div>
                             </div>
                         </div>
@@ -908,25 +980,33 @@ body{
                 <div>
                     <button id="cart">
                         <span>
+<<<<<<< HEAD
                             <a href="./cart.html"><img src="https://images.dailyobjects.com/marche/icons/Bag.png?tr=cm-pad_resize,v-2,w-16,h-16,dpr-1"
                                 alt=""></a>
                             
+=======
+                            <a href=""><img
+                                    src="https://images.dailyobjects.com/marche/icons/Bag.png?tr=cm-pad_resize,v-2,w-16,h-16,dpr-1"
+                                    alt=""></a>
+
+>>>>>>> 35afdcccc687c1a9739da09e579e4bcb30fafba0
                         </span>
-                        <span
-                        class="cartcount">0</span>
+                        <span class="cartcount">0</span>
                     </button>
                     <button id="user">
                         <span>
-                            <a href=""><img src="https://images.dailyobjects.com/marche/icons/Profile.png?tr=cm-pad_resize,v-2,w-16,h-16,dpr-1"
-                                alt=""></a>
-                            
+                            <a href=""><img
+                                    src="https://images.dailyobjects.com/marche/icons/Profile.png?tr=cm-pad_resize,v-2,w-16,h-16,dpr-1"
+                                    alt=""></a>
+
                         </span>
                     </button>
                     <button id="search">
                         <span>
-                            <a href=""><img src="https://images.dailyobjects.com/marche/icons/Search.png?tr=cm-pad_resize,v-2,w-16,h-16,dpr-1"
-                                alt=""></a>
-                            
+                            <a href=""><img
+                                    src="https://images.dailyobjects.com/marche/icons/Search.png?tr=cm-pad_resize,v-2,w-16,h-16,dpr-1"
+                                    alt=""></a>
+
                         </span>
                     </button>
                 </div>
@@ -936,16 +1016,16 @@ body{
 
 
     <!-- search bar section -->
-    <div class="wrapper"  style="border: none
+    <div class="wrapper" style="border: none
     ;">
-        <div class="search-input"  style="border: none
+        <div class="search-input" style="border: none
         ;">
             <a href="" target="_blank" hidden></a>
             <input type="text" placeholder="Search the products here">
             <div class="autocom-box">
                 <!-- here the list of suggestions should be shown -->
             </div>
-            <div class="icon"  style="border: none
+            <div class="icon" style="border: none
             ;">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
@@ -954,103 +1034,299 @@ body{
 
 
     <!-- display search data here -->
+    sort : <select id="sort-product">
+        <option value="">All</option>
+        <option value="Low to High">Low to High</option>
+        <option value="High to Low">High to Low</option>
+        
+    </select>
     <div class="search-div">
-        <div class="product-div">
-            <!-- append all data here -->
-        </div>
+        <!-- append all the search data here -->
     </div>
-    
+
 </body>
+
 </html>
 
 
 <script>
 
-// getting all required elements
-const searchWrapper = document.querySelector(".search-input");
-const inputBox = searchWrapper.querySelector("input");
-const suggBox = searchWrapper.querySelector(".autocom-box");
-const icon = searchWrapper.querySelector(".icon");
-let linkTag = searchWrapper.querySelector("a");
-let webLink;
+    // getting all required elements
+    const searchWrapper = document.querySelector(".search-input");
+    const inputBox = searchWrapper.querySelector("input");
+    const suggBox = searchWrapper.querySelector(".autocom-box");
+    const icon = searchWrapper.querySelector(".icon");
+    let linkTag = searchWrapper.querySelector("a");
+    let webLink;
 
-// if user press any key and release
-inputBox.onkeyup = (e)=>{
-    let userData = e.target.value; //user enetered data
-    let emptyArray = [];
-    if(userData){
-        icon.onclick = ()=>{
-            // webLink = "https://www.google.com/search?q=" + userData;
+    // if user press any key and release
+    inputBox.onkeyup = (e) => {
+        let userData = e.target.value; //user enetered data
+        let emptyArray = [];
+        if (userData) {
+            icon.onclick = () => {
+                // webLink = "https://www.google.com/search?q=" + userData;
+                // linkTag.setAttribute("href", webLink);
+                // console.log(webLink);
+                // linkTag.click();
+                SearchDataRender()
+
+            }
+            emptyArray = suggestions.filter((data) => {
+                //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
+                return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+            });
+            emptyArray = emptyArray.map((data) => {
+                // passing return data inside li tag
+                return data = '<li>' + data + '</li>';
+            });
+            searchWrapper.classList.add("active"); //show autocomplete box
+            showSuggestions(emptyArray);
+            let allList = suggBox.querySelectorAll("li");
+            for (let i = 0; i < allList.length; i++) {
+                //adding onclick attribute in all li tag
+                allList[i].setAttribute("onclick", "select(this)");
+            }
+        } else {
+            searchWrapper.classList.remove("active"); //hide autocomplete box
+        }
+    }
+
+    function select(element) {
+        let selectData = element.textContent;
+        inputBox.value = selectData;
+        icon.onclick = () => {
+            // webLink = "https://www.google.com/search?q=" + selectData;
             // linkTag.setAttribute("href", webLink);
-            // console.log(webLink);
             // linkTag.click();
-            window.location.href = "./Accessories.html"
+            SearchDataRender()
         }
-        emptyArray = suggestions.filter((data)=>{
-            //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
-            return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase()); 
-        });
-        emptyArray = emptyArray.map((data)=>{
-            // passing return data inside li tag
-            return data = '<li>'+ data +'</li>';
-        });
-        searchWrapper.classList.add("active"); //show autocomplete box
-        showSuggestions(emptyArray);
-        let allList = suggBox.querySelectorAll("li");
-        for (let i = 0; i < allList.length; i++) {
-            //adding onclick attribute in all li tag
-            allList[i].setAttribute("onclick", "select(this)");
+        searchWrapper.classList.remove("active");
+    }
+
+    function showSuggestions(list) {
+        let listData;
+        if (!list.length) {
+            userValue = inputBox.value;
+            listData = '<li>' + userValue + '</li>';
+        } else {
+            listData = list.join('');
         }
-    }else{
-        searchWrapper.classList.remove("active"); //hide autocomplete box
+        suggBox.innerHTML = listData;
     }
-}
 
-function select(element){
-    let selectData = element.textContent;
-    inputBox.value = selectData;
-    icon.onclick = ()=>{
-        // webLink = "https://www.google.com/search?q=" + selectData;
-        // linkTag.setAttribute("href", webLink);
-        // linkTag.click();
-        window.location.href = "./Accessories.html"
+    let suggestions = [
+        "charging",
+        "wireless",
+        "apple",
+        "samsung",
+        "google",
+        "nothing",
+        "apple watch",
+        "backpacks",
+        "Magnetic",
+        "Conoid Universal",
+        "Magnetic Wireless",
+        "Apple Watch Charging Stand",
+        "Charging Station",
+        "Apple Watch Charger",
+        "Dual Port Charger",
+        "Universal Braided Charging Cable",
+        "Charging Cable",
+        "Cable",
+        "Apple WatchBand",
+        "Magnetic Milanese Loop",
+        "Braided Solo Loop Apple WatchBand",
+        "Leather Link Apple WatchBand",
+        "Apple Watch Series Case with Screen Protector",
+        "Apple Watch Series Case",
+        "Screen Protector",
+        "Silicone Apple WatchBand",
+        "Apple WatchBand",
+        "Monitor Stand",
+        "Phone and Pen Stand",
+        "Pen Stand",
+        "Phone Stand",
+        "Adjustable Phone Stand",
+        "Laptop Stand",
+        "Tablet Stand",
+        "Folding Laptop/Tablet Stand",
+        "Laptop & Book Stand",
+        "Phone Holder For Laptop/Desktop Screen",
+        "Bottle",
+        "Active Bottle",
+        "Bottle Combo",
+        "Travel Flask",
+        "Flask",
+        "Screen Protector",
+        "9D Tempered Glass",
+        "OnePlus 7T Pro",
+        "Wallet",
+        "Phone Wallet",
+        "Phone Case Cover For iPhone",
+        "Cover",
+        "Case For Samsung",
+        "Samsung Galaxy Z Flip 4",
+        "iPhone 14",
+        "iPhone 14 Pro",
+        "Oneplus Nord",
+        "Oneplus",
+        "Nothing Phone",
+        "Phone",
+        "Matte",
+        "Phone Case",
+        "Leather Phone Case",
+        "Google Pixel",
+        "Google",
+        "Pixel",
+        "Motorola",
+        "Sleeve",
+        "leeve Small For iPads/Tablet",
+        "MacBook",
+        "Airpods",
+        "iPad",
+        "Sleeve For iPad",
+        "Passport Cover",
+        "Sunglass Case",
+        "Eyewear",
+        "AirTag",
+        "AirTag Case",
+        "Bi-Fold Wallet",
+        "Leather Wallet",
+        "Zip Wallet",
+        "Women's Classic Wallet",
+        "Coin Wallet",
+        "Men's Wallet",
+        "Crossbody",
+        "Shoulder Bag",
+        "Crossbody Bag",
+        "Pouch",
+        "Square Pouch",
+        "Organiser",
+        "Messenger Bag",
+        "Briefcase Bag",
+        "Backpack"
+        
+
+    ];
+
+
+
+
+    let searchAppendDiv = document.querySelector(".search-div")
+    let SortTag = document.querySelector("select")
+    // console.log(SortTag.value)
+
+
+    //     icon.addEventListener('click', () => {
+
+    //         let searchedInp = 
+    //   })
+
+    // SearchDataRender()
+    let storedDATA = []
+
+
+    async function SearchDataRender() {
+
+        try {
+            let res = await fetch(`http://127.0.0.1:9090/searchapi`)
+
+            let data = await res.json()
+            console.log(data)
+
+            let mostsearched = data.filter((element) => {
+                if (element.title.toUpperCase().includes(inputBox.value.toUpperCase()) == true) {
+                    return true
+                }
+                else {
+                    return false
+                }
+            })
+            displaySearchData(mostsearched)
+            storedDATA = mostsearched
+        } catch (error) {
+            console.log(error)
+        }
     }
-    searchWrapper.classList.remove("active");
-}
 
-function showSuggestions(list){
-    let listData;
-    if(!list.length){
-        userValue = inputBox.value;
-        listData = '<li>'+ userValue +'</li>';
-    }else{
-        listData = list.join('');
+
+
+    function displaySearchData(data) {
+
+        searchAppendDiv.innerHTML = ""
+
+        data.forEach((element) => {
+
+            let Div = document.createElement("div")
+            Div.setAttribute("class", "product-div")
+
+            // let childProduct = document.createElement("div")
+            // childProduct.setAttribute("class","child-product-div")
+
+            let image = document.createElement("img")
+
+            if(element.thumbnail==""){
+                image.setAttribute("src", element.image[0])
+            }
+            else{
+                image.setAttribute("src", element.thumbnail)
+            }
+            
+
+            let title = document.createElement("p")
+            title.setAttribute("class", "product-title")
+            title.innerText = element.title
+
+            let priceDiv = document.createElement("div")
+            priceDiv.setAttribute("class", "price-div")
+
+            let discountPrice = document.createElement("span")
+            discountPrice.setAttribute("class", "discount-price")
+            discountPrice.innerText = 1000 + element.price
+      
+
+            let price = document.createElement("p")
+            price.setAttribute("class", "product-price")
+            price.innerText = "Rs. " + element.price
+
+            priceDiv.append(price, discountPrice)
+
+
+
+            
+
+            Div.append(image, title, priceDiv)
+            // Div.append(childProduct)
+            searchAppendDiv.append(Div)
+        });
+
+        // sortSalary(data)
+
     }
-    suggBox.innerHTML = listData;
-}
 
-let suggestions = [
-    "charging",
-    "wireless",
-    "stands",
-    "charger",
-    "mobile",
-    "bags",
-    "cases",
-    "covers",
-    "accessories",
-    "passport wallets",
-    "phone wallets",
-    "wallets",
-    "mens wallet",
-    "womens wallets",
-    "apple",
-    "samsung",
-    "google",
-    "nothing",
-    "apple watch"
-    
-];
+
+
+    // sortSalary()
+
+    SortTag.addEventListener('change',(e) => {
+        console.log(SortTag.value)
+
+        if(SortTag.value==""){
+            displaySearchData(storedDATA)
+        }
+        else if(SortTag.value=="Low to High"){
+            let sorted = storedDATA.sort(function(a,b) {return a.price - b.price})
+            displaySearchData(sorted)
+        }
+        else if(SortTag.value=="High to Low"){
+            let sorted = storedDATA.sort(function(a,b) {return b.price - a.price})
+            displaySearchData(sorted)
+        }
+        
+    })
+    // filterEmp(data)
+
 
 
 let logo = document.getElementById("logo")

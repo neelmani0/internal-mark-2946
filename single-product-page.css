@@ -173,14 +173,15 @@ body{
 h1{
     font-family: 'Trade Gothic LT Pro', sans-serif !important;
     margin-left: 3%;
+    margin-top: 50px;
 }
 #products-1>div>p{
   width: 220px;
   font-family: 'Trade Gothic LT Pro', sans-serif !important;
   color: rgba(0,0,0,.87);
-  /* height: 36px;
+  height: 32px;
   white-space: wrap;
-  overflow: hidden; */
+  overflow: hidden;
   font-size: small;
 }
 .hidden{

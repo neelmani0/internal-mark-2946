@@ -126,6 +126,7 @@ console.log(data)
             cartData.push({...element,qty:1});
             localStorage.setItem("cartdata",JSON.stringify(cartData));
             alert("product successfully added to cart")
+            window.location.reload()
           }
         })
 
@@ -150,6 +151,18 @@ console.log(data)
       img.src = element.img;
       name.textContent = element.name;
       price.textContent = `Rs.${element.price}`;
+      card.addEventListener("click",()=>{
+        let obj = {}
+        obj.name = element.name;
+        obj.img = element.img;
+        obj.price = element.price;
+        obj.images = element.images;
+        obj.id = element.id;
+        let arr =[];
+        arr.push(obj);
+        localStorage.setItem("single-data",JSON.stringify(arr))
+        location.reload()
+    })
       cont1.append(card);
       card.append(img,name,price)
       });
@@ -164,3 +177,19 @@ console.log(data)
     }
     return false;
   }
+
+
+  let logo = document.getElementById("logo")
+    logo.addEventListener("click",()=>{
+        window.location.href="http://127.0.0.1:5500/index.html"
+    })
+
+
+
+    let cartcount = document.querySelector(".cartcount");
+    
+    let cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
+    if (cartdata.length === 0) {
+        cartcount.style.display = "none"
+    }
+    cartcount.innerText = cartdata.length;

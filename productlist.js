@@ -23,12 +23,20 @@ function display(data){
     let card = document.createElement("div");
     let img = document.createElement("img");
     let name = document.createElement("p");
-    let price = document.createElement("h4");
+    let pricediv = document.createElement("div")
+    let price = document.createElement("span");
+    priceRemove = document.createElement("span");
+    priceRemove.textContent = element.price+850;
+    price.textContent = `Rs.${element.price}`;
+    priceRemove.setAttribute("class","span1") 
+    price.setAttribute("class","span2")
+    pricediv.setAttribute("class","pricediv")
     img.src = element.thumbnail;
     name.textContent = element.title;
     price.textContent = `Rs.${element.price}`;
+    pricediv.append(price,priceRemove)
     container.append(card);
-    card.append(img,name,price)
+    card.append(img,name,pricediv)
     card.addEventListener("click",()=>{
         let obj = {}
         obj.name = element.title;
@@ -50,7 +58,16 @@ function display(data){
     });
     
 }
-let logo = document.getElementById("logo")
+    let logo = document.getElementById("logo")
     logo.addEventListener("click",()=>{
         window.location.href="http://127.0.0.1:5500/index.html"
     })
+
+
+    let cartcount = document.querySelector(".cartcount");
+    
+    let cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
+    if (cartdata.length === 0) {
+        cartcount.style.display = "none"
+    }
+    cartcount.innerText = cartdata.length;

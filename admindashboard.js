@@ -4,7 +4,7 @@
 
 let cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
 
-let checkoutData = JSON.parse(localStorage.getItem("checkoutdata"))
+let checkoutData = JSON.parse(localStorage.getItem("checkoutdata"))||[];
 const baseurl = `http://127.0.0.1:9090/`
 var x = "CHARGING-SOLUTIONS";
 let lowstocks = 0;

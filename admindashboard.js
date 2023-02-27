@@ -2,12 +2,18 @@
 
 //const { data } = require("cypress/types/jquery")
 
-let cartdata = JSON.parse(localStorage.getItem("cartdata")) || []
+let cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
+
+let checkoutData = JSON.parse(localStorage.getItem("checkoutdata"))
 const baseurl = `http://127.0.0.1:9090/`
 var x = "CHARGING-SOLUTIONS";
 let lowstocks = 0;
 let pending = document.getElementById("pending");
+let checkout = document.getElementById("checkout")
 pending.innerText = cartdata.length;
+
+checkout.innerText = checkoutData.length;
+
 var items = document.getElementById("items")
 let totalstock = document.getElementById("zero stocks");
 let lowstockcount = document.getElementById("low-stocks")
@@ -118,11 +124,11 @@ function append(data) {
             fetchdata();
         })
         if (element.stock <= 50) {
-            div.style.backgroundColor = "red";
+            div.style.backgroundColor = "lightpink";
         } else if (element.stock > 50 && element.stock < 100) {
-            div.style.backgroundColor = "yellow";
+            div.style.backgroundColor = "#eced93";
         } else {
-            div.style.backgroundColor = "green";
+            div.style.backgroundColor = "lightgreen";
         }
 
 

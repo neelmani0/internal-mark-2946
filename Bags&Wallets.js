@@ -56,13 +56,13 @@ function display(data) {
             arr.shift()
             arr.push(element.category)
             localStorage.setItem("products",JSON.stringify(arr))
-            window.location.href = "http://127.0.0.1:5500/Bags&Walletsproducts.html"
+            window.location.href = "./Bags&Walletsproducts.html"
         })
     });
 }
 let logo = document.getElementById("logo")
 logo.addEventListener("click", () => {
-    window.location.href = "http://127.0.0.1:5500/index.html"
+    window.location.href = "./index.html"
 })
 
 

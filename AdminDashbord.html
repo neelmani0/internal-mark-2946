@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce Admin Page</title>
+    <link rel="shortcut icon" href="./logo.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="admindashboard.css">
 
 </head>
@@ -15,10 +16,11 @@
         <nav>
             <ul>
 
+                <li><a href="./signin&signup.html">Login as a user</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="adminOrder.html">Orders</a></li>
                 <li>
-                    <a href="admin-singhup-singhup/admin-signin&signup.html"><img id="signin" style="height: 20px;width: 20px;" src="http://img.freepik.com/free-icon/user-image-with-black-background_318-34564.jpg?size=338&ext=jpg" /></a>
+                    <a href="./admin-signin&signup.html"><img id="signin" style="height: 20px;width: 20px;" src="http://img.freepik.com/free-icon/user-image-with-black-background_318-34564.jpg?size=338&ext=jpg" /></a>
                 </li>
             </ul>
         </nav>
@@ -27,9 +29,18 @@
         <div>
             <div><img src="https://images.meeshosupplyassets.com/growth/pending-orders-icon.svg" alt="Pending Orders icon"></div>
             <div>
-                <p class="MuiTypography-root MuiTypography-body1 css-dvix8y">Pending Orders for payment</p>
+                <p class="MuiTypography-root MuiTypography-body1 css-dvix8y">User Cart Pending Order</p>
                 <div>
                     <h4 id="pending">0</h4>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div><img src="https://images.meeshosupplyassets.com/growth/pending-orders-icon.svg" alt="Pending Orders icon"></div>
+            <div>
+                <p class="MuiTypography-root MuiTypography-body1 css-dvix8y">Pending Order</p>
+                <div>
+                    <h4 id="checkout">0</h4>
                 </div>
             </div>
         </div>
@@ -94,18 +105,18 @@
                         <label for="product-name">Category:</label>
                         <select name="" id="category" required>
                             <option value="CHARGING-SOLUTIONS">CHARGING-SOLUTIONS</option>
-                            <option value="appleBands">appleBands</option>
-                            <option value="stands">stands</option>
-                            <option value="drinkware">drinkware</option>
-                            <option value="screenGaurd">screenGaurd</option>
-                            <option value="phoneWallets">phoneWallets</option> 
-                          <option value="Apple">Apple</option> 
-                        <option value="Samsung">Samsung</option>
-                    <option value="OnePlus">OnePlus</option>  
-                <option value="Nothing">nothing</option> 
-            <option value="Google">Google</option>       
-        <option value="Motorola">Motorola</option> 
-    <option value="backpacks">backpacks</option>       </select>
+                            <option value="WATCH-BANDS">appleBands</option>
+                            <option value="STANDS">stands</option>
+                            <option value="DRINKWARE">drinkware</option>
+                            <option value="SCREEN-GUARD">screenGaurd</option>
+                            <option value="PHONE-WALLETS">phoneWallets</option> 
+                          <option value="APPLE">Apple</option> 
+                        <option value="SAMSUNG">Samsung</option>
+                    <option value="ONEPLUS">OnePlus</option>  
+                <option value="NOTHING">nothing</option> 
+            <option value="GOOGLE">Google</option>       
+        <option value="MOTOROLA">Motorola</option> 
+    <option value="BACKPACKS">backpacks</option>       </select>
                     </div>
 
                     <button type="submit">Add Product</button>
@@ -153,21 +164,20 @@
                     </div>
                     <div>
                         <label for="product-name">Category:</label>
-                        <select name="" id="category1">
+                        <select name="" id="category1" required>
                             <option value="CHARGING-SOLUTIONS">CHARGING-SOLUTIONS</option>
-                            <option value="appleBands">appleBands</option>
-                            <option value="stands">stands</option>
-                            <option value="drinkware">drinkware</option>
-                            <option value="screenGaurd">screenGaurd</option>
-                            <option value="phoneWallets">phoneWallets</option> 
-                          <option value="Apple">Apple</option> 
-                        <option value="Samsung">Samsung</option>
-                    <option value="OnePlus">OnePlus</option>  
-                <option value="Nothing">nothing</option> 
-            <option value="Google">Google</option>       
-        <option value="Motorola">Motorola</option> 
-    <option value="backpacks">backpacks</option>  
-    </select>
+                            <option value="WATCH-BANDS">appleBands</option>
+                            <option value="STANDS">stands</option>
+                            <option value="DRINKWARE">drinkware</option>
+                            <option value="SCREEN-GUARD">screenGaurd</option>
+                            <option value="PHONE-WALLETS">phoneWallets</option> 
+                          <option value="APPLE">Apple</option> 
+                        <option value="SAMSUNG">Samsung</option>
+                    <option value="ONEPLUS">OnePlus</option>  
+                <option value="NOTHING">nothing</option> 
+            <option value="GOOGLE">Google</option>       
+        <option value="MOTOROLA">Motorola</option> 
+    <option value="BACKPACKS">backpacks</option></select>
                     </div>
 
 

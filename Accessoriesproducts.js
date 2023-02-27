@@ -21,8 +21,11 @@ fetch(`http://127.0.0.1:9090/${bag}`)
 })
 .then((res)=>{
     display(res)
+
+    localStorage.setItem("storedata",JSON.stringify(res))
 })
 function display(data){
+    container.innerHTML = ""
     data.forEach((element) => {  
     let card = document.createElement("div");
     let img = document.createElement("img");
@@ -57,14 +60,14 @@ function display(data){
         arr.push(obj);
         localStorage.setItem("single-data",JSON.stringify(arr))
         localStorage.setItem("recently-viewed",JSON.stringify(recentArr))
-        window.location.href = "http://127.0.0.1:5500/single-product-page.html"
+        window.location.href = "./single-product-page.html"
     })
     });
     
 }
     let logo = document.getElementById("logo")
     logo.addEventListener("click",()=>{
-        window.location.href="http://127.0.0.1:5500/index.html"
+        window.location.href="./index.html"
     })
 
 
@@ -88,6 +91,8 @@ function display(data){
 
         console.log(filterdata)
         displaycategory(filterdata)
+
+
     })
 
 
@@ -106,6 +111,67 @@ function displaycategory(data){
 
     filterEl.append(filterCard)
 
+    filterCard.addEventListener("click",()=>{
+    
+        // console.log(storedata);
+
+        filterproduct(element.name)
+
+        
+    //     if(filterCard.value==="ALL"){
+    //         display(storedata)
+    //     }
+    //     else{
+    
+    //         let filteredData = storedata.filter((element) => {
+    //             if (element.sub-category === filterCard.value) {
+    //                 return true;
+    //             }
+    //             else{
+        
+    //                 return false;
+    //             }
+    //         })
+    
+    //         display(filteredData);
+    //     }
+        
+    
+        
+    })
+
     })
     
+}
+
+
+function filterproduct(cardvalue){
+
+    
+    let storedata = JSON.parse(localStorage.getItem("storedata"))||[];
+
+    console.log(storedata)
+        if(cardvalue==="ALL"){
+            display(storedata)
+        }
+        else{
+
+            let filteredData = storedata.filter((element) => {
+
+                
+                if (element.type === cardvalue) {
+                    return true;
+                }
+                else{
+        
+                    return false;
+                }
+            })
+    
+            display(filteredData);
+        } 
+        
+        
+    
+
 }

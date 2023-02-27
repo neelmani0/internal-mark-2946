@@ -57,13 +57,13 @@ function display(data) {
             arr.push(element.category)
             localStorage.setItem("products",JSON.stringify(arr))
             localStorage.removeItem("storedata")
-            window.location.href = "http://127.0.0.1:5500/Cases&Sleevespproducts.html"
+            window.location.href = "./Cases&Sleevespproducts.html"
         })
     });
 }
 let logo = document.getElementById("logo")
 logo.addEventListener("click", () => {
-    window.location.href = "http://127.0.0.1:5500/index.html"
+    window.location.href = "./index.html"
 })
 
 

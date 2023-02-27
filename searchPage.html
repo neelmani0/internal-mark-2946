@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily lifestyle</title>
+    <link rel="shortcut icon" href="./logo.jpeg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/0d657c1c48.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="index.css">
@@ -175,7 +176,7 @@
     <header>
         <div class="container">
             <div id="logo">
-                <img src="https://images.dailyobjects.com/marche/icons/logo_named.png?tr=cm-pad_resize,v-2,w-135,h-27,dpr-1"
+                <img src="./nav logo.jpeg"
                     alt="">
             </div>
 
@@ -980,16 +981,9 @@
                 <div>
                     <button id="cart">
                         <span>
-<<<<<<< HEAD
                             <a href="./cart.html"><img src="https://images.dailyobjects.com/marche/icons/Bag.png?tr=cm-pad_resize,v-2,w-16,h-16,dpr-1"
                                 alt=""></a>
                             
-=======
-                            <a href=""><img
-                                    src="https://images.dailyobjects.com/marche/icons/Bag.png?tr=cm-pad_resize,v-2,w-16,h-16,dpr-1"
-                                    alt=""></a>
-
->>>>>>> 35afdcccc687c1a9739da09e579e4bcb30fafba0
                         </span>
                         <span class="cartcount">0</span>
                     </button>
@@ -1264,13 +1258,13 @@
             // let childProduct = document.createElement("div")
             // childProduct.setAttribute("class","child-product-div")
 
-            let image = document.createElement("img")
+            let img = document.createElement("img")
 
             if(element.thumbnail==""){
-                image.setAttribute("src", element.image[0])
+                img.setAttribute("src", element.image[0])
             }
             else{
-                image.setAttribute("src", element.thumbnail)
+                img.setAttribute("src", element.thumbnail)
             }
             
 
@@ -1294,9 +1288,25 @@
 
 
 
-            
+            Div.addEventListener("click",()=>{
+            let obj = {}
+            obj.name = element.title;
+            obj.img = element.thumbnail;
+            obj.price = element.price;
+            obj.images = element.images;
+            obj.id = element.id;
+            let arr = [];
+            let recentArr = JSON.parse(localStorage.getItem("recently-viewed")) || [];
+            if (recentArr.length === 12) {
+                recentArr.shift();
+            }
+            recentArr.push(obj);
+            arr.push(obj);
+            localStorage.setItem("single-data", JSON.stringify(arr))
+                window.location.href = "http://127.0.0.1:5500/single-product-page.html"
+            })
 
-            Div.append(image, title, priceDiv)
+            Div.append(img, title, priceDiv)
             // Div.append(childProduct)
             searchAppendDiv.append(Div)
         });

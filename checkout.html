@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping-Hub - Women's Clothing, Accessories & Home</title>
+    <link rel="shortcut icon" href="./logo.jpeg" type="image/x-icon">
 
     <!-- <script src="https://js.instamojo.com/v1/checkout.js"></script>
     <script>
@@ -41,7 +42,7 @@
 
     <style>
         body{
-            background-color: antiquewhite;
+            background-color: white;
         }
 
         #cont{
@@ -49,8 +50,8 @@
             margin: auto;
             margin-top: 100px;
             padding: 20px 30px;
-            border: 1px solid #FF4B2B;
-            background-color:  #FF416C;
+            border: 1px solid black;
+            background-color:  #F5F5F5;
             height: 500px;
             border-radius: 10px;
         }
@@ -80,13 +81,13 @@
             font-size: 20px;
             padding: 5px;
             border-radius: 5px;
-            background-color: green;
+            background-color: #20a87e;
             color: white;
             margin-top: 80px;
         }
         #cont h1{
             text-align: center;
-            color: white;
+            color: black;
             margin-bottom: 50px;
         }
         #pincode{
@@ -116,12 +117,12 @@
     <div id="cont">
         <h1>PAYMENT PAGE</h1>
         <form action="">
-            <input type="text" id="name" placeholder="Enter your name">
-            <input type="number" name="number" id="number" placeholder="Enter your number">
-            <input type="text" class="address" placeholder="Enter your address 1">
-            <input type="text" class="address" placeholder="Enter your address 2">
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="number" name="number" id="number" placeholder="Enter your number" required>
+            <input type="text" class="address" placeholder="Enter your address 1" required>
+            <input type="text" class="address" placeholder="Enter your address 2" required>
 
-            <input type="number" name="number" id="pincode" placeholder="Pincode">
+            <input type="number" name="number" id="pincode" placeholder="Pincode" required>
 
             <select name="select state" id="select">
               <option value="">Select State</option>
@@ -167,7 +168,8 @@
 
         e.preventDefault()
 
-        window.location.href="./payment.html"
+        alert("Order Successfull")
+        window.location.href ="http://127.0.0.1:5500/index.html"
         console.log("yes")
 
         

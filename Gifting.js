@@ -48,13 +48,13 @@ function display(data) {
         card.append(img, h3)
         card.addEventListener("click", () => {
             localStorage.setItem("products", JSON.stringify(data))
-            window.location.href = "http://127.0.0.1:5500/productlist.html"
+            window.location.href = "./productlist.html"
         })
     });
 }
 let logo = document.getElementById("logo")
 logo.addEventListener("click", () => {
-    window.location.href = "http://127.0.0.1:5500/index.html"
+    window.location.href = "./index.html"
 })
 
 

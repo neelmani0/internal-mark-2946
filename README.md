@@ -1,4 +1,15 @@
-# internal-mark-2946
+# internal-mark-2946    
+
+**************************************************************************
+
+####   PLEASE RUN THE SERVER BEFORE OPENING THE WEBSITE ON BROWSER  ####
+npm i ---- to install npm
+
+npm run server ----to run Back End server 
+
+npm run start ----to run front end server
+***************************************************************************
+
 we have make the clone of Daily Objects and we have changed the logo and name of the website.
 
 we have use HTTML, CSS and Javascript to build this website.

@@ -154,7 +154,11 @@
 
 <script>
 
-  customerDetails = []
+  customerDetails = [];
+
+  let checkoutdata = JSON.parse(localStorage.getItem("cartdata"))||[];
+
+  localStorage.setItem("checkoutdata",JSON.stringify(checkoutdata))
 
   let nameID = document.getElementById("name")
   let mobileID = document.getElementById("number")
@@ -169,7 +173,8 @@
         e.preventDefault()
 
         alert("Order Successfull")
-        window.location.href ="http://127.0.0.1:5500/index.html"
+        localStorage.removeItem("cartdata")
+        window.location.href ="./index.html"
         console.log("yes")
 
         

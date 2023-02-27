@@ -43,6 +43,7 @@
                 
 
                 <input type="submit" value="submit" id="button2">
+                <a href="./admin-signin&signup.html"><p>Admin Login</p></a>
             </form>
         </div>
         <div class="overlay-container">
@@ -144,7 +145,7 @@
       password1: passwordInput.value,
     }
     storeData.push(formData)
-    // localStorage.setItem("userdetails", JSON.stringify(lsData))
+    localStorage.setItem("data", JSON.stringify(storeData))
 
     checkData(database, storeData)
   })

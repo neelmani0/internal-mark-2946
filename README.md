@@ -39,6 +39,10 @@ Here are the some images of our website
 #Single product Page
 ![WhatsApp Image 2023-02-27 at 12 43 26 PM](https://user-images.githubusercontent.com/115461514/221498583-06885bf8-0393-4a7d-ad3e-029c5c2afb39.jpeg)
 
+#Cart Page
+![WhatsApp Image 2023-02-27 at 12 43 23 PM (1)](https://user-images.githubusercontent.com/115461514/221499780-d7b77e9c-9701-4e2f-9ddf-c2dd567814f2.jpeg)
+
+
 
 #Payment Page
 ![WhatsApp Image 2023-02-27 at 12 43 26 PM (1)](https://user-images.githubusercontent.com/115461514/221498611-af4aa5f5-3c35-4904-95ce-a5263b6b34fd.jpeg)
